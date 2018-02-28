@@ -32,7 +32,7 @@ app.get("/article-two", function(req,res){
 });
 
 
-app.get('/article-three', function(req,res){
+app.get("/article-three", function(req,res){
    res.send("article" is getting loaded");
     
 });
@@ -41,7 +41,7 @@ app.get('/article-three', function(req,res){
 
 app.get("/article-three",function(req,res){
    
-   res.send("article thress loaded") 
+   res.send("article thress loaded") ;
 });
 
 
