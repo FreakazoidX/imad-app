@@ -23,6 +23,12 @@ app.get("/alok-one", function(req,res){
     
 });
 
+app.get("/ui/Freak.html",function(req,res){
+   res.sendFile(path.join(__dirname,'ui','Freak.html'));
+    
+});
+
+
 
 
 
