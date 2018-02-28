@@ -9,6 +9,75 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
+var content = {
+    title:'Home',
+    heading:'Article_One',
+    content:`
+    <p>This is  the contentThis is  the contentThis is  the contentThis is  the contentThis is  the contentThis is  the content </p>`
+    
+    
+};
+function create(data){
+
+var title=data.title;
+var heading=data.heading;
+var content=data.content;
+
+var htmltemplate=`
+<html>
+<head>
+<title>Alok</title>
+<link rel="stylesheet" href="/ui/style.css">
+</head>
+<body>
+<div class="container">
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <div>
+        <h1>${heading}</h1>
+        
+    </div>
+    
+    <div>
+    ${content}
+    
+    </div>
+  
+    
+    
+</div>
+</body>
+</html>`;
+
+
+return htmlTemplate;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+app.get('/alok',function(req,res){
+    res.send(create(alok));
+    
+});
+
+
+
+
+
+
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
