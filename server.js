@@ -29,6 +29,10 @@ app.get('Freak.html',function(req,res){
 });
 
 
+app.get("/alok.html",function(req,res){
+   res.sendFile(path.join(__dirname,'ui','alok.html'));
+    
+});
 
 
 
