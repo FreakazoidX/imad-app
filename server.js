@@ -26,7 +26,7 @@ app.get("/alok-one", function(req,res){
 
 app.get("/alok.html",function(req,res){
    
-   res.sendFile(path.join(__dirname,'ui','alok.html')) 
+   res.sendFile(path.join(__dirname,'ui','alok.html')) ;
 });
 
 
