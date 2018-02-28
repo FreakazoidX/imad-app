@@ -18,30 +18,9 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
-app.get('/article-one',function(req,res){
-   
-   res.send("Article one loaded");
-   
-});
-
-
-app.get("/article-two", function(req,res){
-   
-   res.send("Article two is getting loaded");
+app.get("/alok-one", function(req,res){
+   res.send("article alok is loading");
     
-});
-
-
-app.get("/article-three", function(req,res){
-   res.send("article" is getting loaded");
-    
-});
-
-
-
-app.get("/article-three",function(req,res){
-   
-   res.send("article thress loaded") ;
 });
 
 
