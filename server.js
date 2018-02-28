@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 
-var content = {
+var Content = {
     title:'Home',
     heading:'Article_One',
     content:`
@@ -67,7 +67,7 @@ return htmlTemplate;
 
 
 app.get('/alok',function(req,res){
-    res.send(create(alok));
+    res.send(create(Content));
     
 });
 
